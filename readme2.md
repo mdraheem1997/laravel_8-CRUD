@@ -83,4 +83,4 @@ https://datatables.net/extensions/buttons/examples/html5/simple.html
 
 <!-- Jquery Validation -->
 https://programmingfields.com/laravel-form-validation-using-jquery-form-validation/
-<!-- ================================================= -->
+<!-- ================================================= =-->
