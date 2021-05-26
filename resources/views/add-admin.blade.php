@@ -26,6 +26,11 @@
                             @error('name')
                             <span class="text-danger">{{$message}}</span>
                             @enderror <br>
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" value="{{old('email')}}">
+                            @error('email')
+                            <span>{{$message}}</span>
+                            @enderror <br>
                             <label for="pwd">Password</label>
                             <input type="password" class="form-control" name="pwd" value="{{old('pwd')}}">
                             @error('pwd')
@@ -55,11 +60,13 @@
                         minlength:5
                     },
                     image: "required",
+                    email: "required",
                     
                 },
                 messages: {
                     username: "Please Fill Username",
                     name: "Please Fill Name",
+                    email: "Please Fill Email",
                     pwd: {
                         required:'Please Fill Password',
                         minlength: "Password must be at least 5 characters"
